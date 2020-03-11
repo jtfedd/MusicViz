@@ -1,5 +1,5 @@
 console.log(getFrequency(49))
-console.log(getFrequency(1))
+console.log(getFrequency(2))
 
 var sun = new Image();
 var moon = new Image();

@@ -1,3 +1,6 @@
+console.log(getFrequency(49))
+console.log(getFrequency(1))
+
 var sun = new Image();
 var moon = new Image();
 var earth = new Image();
@@ -10,6 +13,10 @@ function init() {
 
 function draw() {
   var ctx = document.getElementById('canvas').getContext('2d');
+
+  ctx.save();
+
+  ctx.translate(centerX - 150, centerY - 150);
 
   // Clear canvas
   ctx.clearRect(0, 0, 300, 300);
@@ -45,6 +52,8 @@ function draw() {
 
   // Shadow
   ctx.fillRect(0, -12, 40, 24);
+
+  ctx.restore();
 
   ctx.restore();
 

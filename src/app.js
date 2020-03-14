@@ -1,5 +1,7 @@
-console.log(getFrequency(49))
-console.log(getFrequency(2))
+canvas = require('./canvas.js');
+frequencies = require('./frequencies/frequencies.js');
+
+canvas.init();
 
 var sun = new Image();
 var moon = new Image();
@@ -12,11 +14,11 @@ function init() {
 }
 
 function draw() {
-  var ctx = document.getElementById('canvas').getContext('2d');
+  var ctx = canvas.getContext();
 
   ctx.save();
 
-  ctx.translate(centerX - 150, centerY - 150);
+  ctx.translate(canvas.getCenterX() - 150, canvas.getCenterY() - 150);
 
   // Clear canvas
   ctx.clearRect(0, 0, 300, 300);

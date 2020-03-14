@@ -1,0 +1,22 @@
+{
+  "name": "musicviz",
+  "version": "0.0.1",
+  "description": "Oscilloscope-style music pattern visualization",
+  "main": "src/js/main.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jtfedd/MusicViz.git"
+  },
+  "author": "Jacob Feddersen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jtfedd/MusicViz/issues"
+  },
+  "homepage": "https://github.com/Jtfedd/MusicViz#readme"
+}

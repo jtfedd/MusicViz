@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/Jtfedd/MusicViz/issues"
   },
-  "homepage": "https://github.com/Jtfedd/MusicViz#readme"
+  "homepage": "https://github.com/Jtfedd/MusicViz#readme",
+  "dependencies": {
+    "mocha": "*",
+    "chai": "*"
+  }
 }

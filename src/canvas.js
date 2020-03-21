@@ -2,7 +2,7 @@
 require('./css/styles.css');
 
 function resizeCanvas(e) {
-    var canvas = document.getElementById("canvas");
+    var canvas = getCanvas();
     canvas.width = document.documentElement.clientWidth;
     canvas.height = document.documentElement.clientHeight;
 }
@@ -41,8 +41,20 @@ function getContext() {
     return getCanvas().getContext('2d');
 }
 
+function getWidth() {
+    var canvas = getCanvas();
+    return canvas.width;
+}
+
+function getHeight() {
+    var canvas = getCanvas();
+    return canvas.height;
+}
+
 exports.getCenterX = getCenterX;
 exports.getCenterY = getCenterY;
+exports.getWidth = getWidth;
+exports.getHeight = getHeight;
 exports.init = init;
 exports.getCanvas = getCanvas;
 exports.getContext = getContext;

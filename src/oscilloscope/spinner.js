@@ -23,4 +23,4 @@ class Spinner {
   }
 }
 
-exports.Spinner = Spinner
+exports.Spinner = Spinner;

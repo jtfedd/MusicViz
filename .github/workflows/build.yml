@@ -25,9 +25,8 @@ jobs:
         env:
           CI: true
       - run: npm run build
-      - uses: actions/upload-artifact@v7
+      - uses: actions/upload-pages-artifact@v5
         with:
-          name: build
           path: dist
 
   deploy:
@@ -47,5 +46,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
-        with:
-          artifact_name: "build"

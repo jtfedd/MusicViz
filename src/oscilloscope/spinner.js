@@ -1,3 +1,5 @@
+export { Spinner };
+
 class Spinner {
   constructor(radius, frequency) {
     this.radius = radius;
@@ -22,6 +24,3 @@ class Spinner {
     this.Y = this.radius * Math.sin(this.angle);
   }
 }
-
-const _Spinner = Spinner;
-export { _Spinner as Spinner };

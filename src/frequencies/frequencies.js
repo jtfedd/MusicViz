@@ -1,3 +1,5 @@
+export { scales, getFrequency, getScale, setScale };
+
 // Tuning scales that have been implemented
 const scales = {
   EQUAL: "equal", // Equal temperament
@@ -58,12 +60,3 @@ function setScale(scale) {
 function getScale() {
   return currentScale;
 }
-
-const _scales = scales;
-export { _scales as scales };
-const _getFrequency = getFrequency;
-export { _getFrequency as getFrequency };
-const _setScale = setScale;
-export { _setScale as setScale };
-const _getScale = getScale;
-export { _getScale as getScale };

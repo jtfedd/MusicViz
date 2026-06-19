@@ -1,3 +1,13 @@
+export {
+  getCenterX,
+  getCenterY,
+  getWidth,
+  getHeight,
+  init,
+  getCanvas,
+  getContext,
+};
+
 // Initializes the document and canvas
 import "./css/styles.css";
 
@@ -50,18 +60,3 @@ function getHeight() {
   var canvas = getCanvas();
   return canvas.height;
 }
-
-const _getCenterX = getCenterX;
-export { _getCenterX as getCenterX };
-const _getCenterY = getCenterY;
-export { _getCenterY as getCenterY };
-const _getWidth = getWidth;
-export { _getWidth as getWidth };
-const _getHeight = getHeight;
-export { _getHeight as getHeight };
-const _init = init;
-export { _init as init };
-const _getCanvas = getCanvas;
-export { _getCanvas as getCanvas };
-const _getContext = getContext;
-export { _getContext as getContext };

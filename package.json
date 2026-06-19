@@ -10,7 +10,8 @@
     "test": "vitest run",
     "dev": "vite serve",
     "build": "vite build",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "format-check": "prettier --check ."
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,5 @@
+export { Spinner };
+
 class Spinner {
   constructor(radius, frequency) {
     this.radius = radius;
@@ -16,11 +18,9 @@ class Spinner {
     this.lastX = this.X;
     this.lastY = this.Y;
 
-    this.angle += 2 * Math.PI * dt * this.frequency
+    this.angle += 2 * Math.PI * dt * this.frequency;
 
-    this.X = this.radius * Math.cos(this.angle)
-    this.Y = this.radius * Math.sin(this.angle)
+    this.X = this.radius * Math.cos(this.angle);
+    this.Y = this.radius * Math.sin(this.angle);
   }
 }
-
-exports.Spinner = Spinner;

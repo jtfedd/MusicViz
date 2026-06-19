@@ -1,8 +1,8 @@
 // Tuning scales that have been implemented
 const scales = {
-  EQUAL: 'equal', // Equal temperament
-  JUST: 'just' // Just temperament
-}
+  EQUAL: "equal", // Equal temperament
+  JUST: "just", // Just temperament
+};
 
 let currentScale = scales.EQUAL;
 
@@ -14,7 +14,7 @@ function getFrequency(note) {
     case scales.JUST:
       return getFrequencyJustTemperament(note);
     default:
-      throw Error('Unimplemented Scale');
+      throw Error("Unimplemented Scale");
   }
 }
 
@@ -30,18 +30,18 @@ function getFrequencyJustTemperament(note) {
   }
 
   let intervals = new Map([
-    [1, 1/1],
-    [2, 16/15],
-    [3, 9/8],
-    [4, 6/5],
-    [5, 5/4],
-    [6, 4/3],
-    [7, 45/32],
-    [8, 3/2],
-    [9, 8/5],
-    [10, 5/3],
-    [11, 9/5],
-    [12, 15/8],
+    [1, 1 / 1],
+    [2, 16 / 15],
+    [3, 9 / 8],
+    [4, 6 / 5],
+    [5, 5 / 4],
+    [6, 4 / 3],
+    [7, 45 / 32],
+    [8, 3 / 2],
+    [9, 8 / 5],
+    [10, 5 / 3],
+    [11, 9 / 5],
+    [12, 15 / 8],
   ]);
 
   return 27.5 * intervals.get(note);

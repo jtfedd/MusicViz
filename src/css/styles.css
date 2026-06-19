@@ -1,12 +1,13 @@
-html, body {
-    width: 100%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 
-    /* remove the margin around the page */
-    margin: 0;
+  /* remove the margin around the page */
+  margin: 0;
 }
 
 canvas {
-    background-color: black;
-    display: block;
+  background-color: black;
+  display: block;
 }

@@ -1,8 +1,8 @@
-canvas = require('./canvas.js');
-frequencies = require('./frequencies/frequencies.js');
-spinner = require('./oscilloscope/spinner.js');
-dat = require('dat.gui');
-params = require('./params.js');
+import * as canvas from './canvas.js';
+import * as frequencies from './frequencies/frequencies.js';
+import * as spinner from './oscilloscope/spinner.js';
+import * as dat from 'dat.gui';
+import * as params from './params.js';
 
 const gui = new dat.GUI();
 
@@ -11,7 +11,7 @@ canvas.init();
 var s1;
 var s2;
 
-p = new params.Params();
+let p = new params.Params();
 
 function init() {
   window.requestAnimationFrame(tick);
@@ -48,7 +48,7 @@ function tick(now) {
   ctx.translate(canvas.getCenterX(), canvas.getCenterY());
 
   ctx.lineWidth = 2;
-  opacity = 0.1 + (p.speedFactor / 900)
+  let opacity = 0.1 + (p.speedFactor / 900)
   ctx.strokeStyle = "rgba(255, 0, 255, " + opacity + ")";
   hue++;
 

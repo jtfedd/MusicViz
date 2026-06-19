@@ -59,7 +59,11 @@ function getScale() {
   return currentScale;
 }
 
-exports.scales = scales;
-exports.getFrequency = getFrequency;
-exports.setScale = setScale;
-exports.getScale = getScale;
+const _scales = scales;
+export { _scales as scales };
+const _getFrequency = getFrequency;
+export { _getFrequency as getFrequency };
+const _setScale = setScale;
+export { _setScale as setScale };
+const _getScale = getScale;
+export { _getScale as getScale };

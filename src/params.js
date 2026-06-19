@@ -5,4 +5,5 @@ class Params {
   }
 }
 
-exports.Params = Params;
+const _Params = Params;
+export { _Params as Params };

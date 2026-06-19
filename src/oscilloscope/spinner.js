@@ -23,4 +23,5 @@ class Spinner {
   }
 }
 
-exports.Spinner = Spinner;
+const _Spinner = Spinner;
+export { _Spinner as Spinner };

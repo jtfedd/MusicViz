@@ -1,5 +1,5 @@
 // Initializes the document and canvas
-require('./css/styles.css');
+import './css/styles.css';
 
 function resizeCanvas(e) {
     var canvas = getCanvas();
@@ -51,10 +51,17 @@ function getHeight() {
     return canvas.height;
 }
 
-exports.getCenterX = getCenterX;
-exports.getCenterY = getCenterY;
-exports.getWidth = getWidth;
-exports.getHeight = getHeight;
-exports.init = init;
-exports.getCanvas = getCanvas;
-exports.getContext = getContext;
+const _getCenterX = getCenterX;
+export { _getCenterX as getCenterX };
+const _getCenterY = getCenterY;
+export { _getCenterY as getCenterY };
+const _getWidth = getWidth;
+export { _getWidth as getWidth };
+const _getHeight = getHeight;
+export { _getHeight as getHeight };
+const _init = init;
+export { _init as init };
+const _getCanvas = getCanvas;
+export { _getCanvas as getCanvas };
+const _getContext = getContext;
+export { _getContext as getContext };
